@@ -9,8 +9,7 @@ s = np.random.normal(mu, sigma, n)  # Creates a random distribution with these p
 print(abs(mu - np.mean(s)))
 print(abs(sigma - np.std(s,ddof=1))) # ddof=1 uses an unbaiased estimator
 
-# First we create a histogram:
-# s is in general an array
+# First we create a histogram (s is in general an array)
 count, bins, ignored = plt.hist(s, 30, density='True') # bins = number of intervals
 
 plt.plot(bins, 1/(sigma * np.sqrt(2 * np.pi))*np.exp( - (bins - mu)**2 / (2 * sigma**2)),
