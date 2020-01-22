@@ -1,4 +1,4 @@
-''' FIRST PRACTISE WITH MATPLOTLIB'''
+''' FIRST STATS EXCERCISE '''
 
 import numpy as np
 import matplotlib.pyplot as plt
