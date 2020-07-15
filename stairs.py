@@ -8,7 +8,7 @@ def main(steps, t):
         for i in steps:
             s = sum(chain+[i])
             if s < t:
-                sub(chain + [i])  # Revursive function
+                sub(chain + [i])  # Recursive function
             elif s == t:   # If the sum reaches the number of steps in the stairs the chain is appended to path list
                 path.append(chain + [i])
     sub([])
